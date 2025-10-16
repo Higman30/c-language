@@ -1,0 +1,11 @@
+{
+  "files.autoSave": "onFocusChange",
+  "files.encoding": "utf8",
+  "editor.tabSize": 4,
+  "editor.rulers": [80],
+  "editor.renderWhitespace": "selection",
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.compilerPath": "/Library/Developer/CommandLineTools/usr/bin/clang"
+}

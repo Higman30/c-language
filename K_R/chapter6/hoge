@@ -1,0 +1,17 @@
+{
+    int cond;
+
+    if (p == null){
+        talloc(void);
+        p->word = strdup(w);
+        p->word = 1;
+        p->left = p->right = NULL;
+    } else if ((cond = strcmp(w, p->word)) == 0)
+        p->count++;
+    else if (cond < 0)
+    p->left = addtree(p->left, w);
+    else
+        p->right = addtree(p->left, w);
+    return p:
+}
+

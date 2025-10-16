@@ -1,0 +1,127 @@
+デバッカの立ち上げ方
+lldb ./appp
+
+構造体
+
+普通のプログラム
+デバッグ時
+clang -std=c17 -Wall -Wextra -Werror -O0 -g -c keytab.c main.c
+コンパイル時
+clang -std=c17 -Wall -Wextra -g main.c keytab.c getword.c binsearch.c getch.c -o app
+実行
+./app < structure.c
+結果
+   1 const
+   1 continue
+   1 default
+   3 else
+   1 for
+   9 if
+  20 int
+   6 return
+   4 sizeof
+   4 struct
+   1 unsigned
+   7 void
+   1 volatile
+   4 while
+
+
+ポインタでのプログラム
+デバッグ時
+clang -std=c17 -Wall -Wextra -Werror -O0 -g -c keytab.c mainp.c
+コンパイル時
+clang -std=c17 -Wall -Wextra -g mainp.c keytab.c getword.c binsearchp.c getch.c -o appp
+実行
+./appp < structure.c
+結果
+1 auto
+   2 break
+   1 case
+   9 char
+   1 const
+   1 continue
+   1 default
+   3 else
+   1 for
+   9 if
+  20 int
+   6 return
+   4 sizeof
+   4 struct
+   1 unsigned
+   7 void
+   1 volatile
+   4 while
+
+自己参照的構造体
+デバッグ時
+clang -std=c17 -Wall -Wextra -Werror -O0 -g -c keytab.c maint.c
+コンパイル時
+fujimotoshigeo@MacBookPro K&R_C_STRUCTER % clang -std=c17 -Wall -Wextra -Werror -O0 -g maint.c addtree.c talloc.c treeprint.c getword.c getch.c -o sapp
+実行
+./sapp < structure.c
+結果
+3 BUFSIZE
+   2 EOF
+   3 MAXWORD
+   3 NKEYS
+   1 auto
+   3 binsearch
+   2 break
+   3 buf
+   5 bufp
+   7 c
+   1 case
+   9 char
+   1 characters
+   1 code
+   3 cond
+   1 const
+   1 continue
+   4 count
+   1 ctype
+   1 d
+   1 default
+   4 define
+   3 else
+   1 for
+   5 getch
+   1 getchar
+   3 getword
+   3 h
+   5 high
+   9 if
+   3 include
+  20 int
+   1 isalnum
+   2 isalpha
+   1 isspace
+   4 key
+   9 keytab
+   2 lim
+   5 low
+   1 main
+   1 many
+   6 mid
+  10 n
+   2 printf
+   6 return
+   1 s
+   4 sizeof
+   1 stdio
+   1 strcmp
+   1 string
+   4 struct
+   2 tab
+   1 too
+   5 ungetch
+   1 unsigned
+   7 void
+   1 volatile
+   7 w
+   4 while
+  12 word
+
+実行
+clang -std=c17 -Wall -Wextra -g test.c hash.c lookup.c install.c hashtab.c -o hashtest
