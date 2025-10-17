@@ -1,5 +1,6 @@
 // kr_temperature.c
 
+#include <stdio.h>
 #include "header.h"
 
 /* fahr=0,20,…,300に対して、華氏-摂氏対応表を印字する */

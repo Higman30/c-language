@@ -1,5 +1,6 @@
 // kr_temperature3.c
 
+#include <stdio.h>
 #include "header.h"
 
 #define LOWER 0   /* 表の下限 */

@@ -1,5 +1,6 @@
 // kr_copy.c
 
+#include <stdio.h>
 #include "header.h"
 
 /* 入力を出力に複写:第1版 */

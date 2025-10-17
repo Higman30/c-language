@@ -1,11 +1,12 @@
 // kr_wcount.c
 
+#include <stdio.h>
 #include "header.h"
 
 #define IN  1   /* 単語の中 */
 #define OUT 0   /* 単語の外 */
 
-/* 入力をちゅうの行、単語、文字のカウント */
+/* 入力中の行、単語、文字のカウント */
 int main(void)
 {
     int c;

@@ -1,5 +1,6 @@
 // kr_lcount.c
 
+#include <stdio.h>
 #include "header.h"
 
 /* 入力を行数をカウント */
@@ -10,9 +11,9 @@ int main(void)
 
     nl = 0;
     while ((c = getchar()) != EOF)
-        if (c == '\n');
+        if (c == '\n')
             ++nl;
-    printf("%ld\n", nl);
+    printf("%d\n", nl);
 
     return 0;
 }

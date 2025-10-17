@@ -1,5 +1,6 @@
 // kr_array.c
 
+#include <stdio.h>
 #include "header.h"
 
 /* 数字、空白、その他をカウント */

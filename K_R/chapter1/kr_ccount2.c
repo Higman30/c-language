@@ -1,5 +1,6 @@
 // kr_ccount2.c
 
+#include <stdio.h>
 #include "header.h"
 
 /* 入力を文字をカウント:第2版 */

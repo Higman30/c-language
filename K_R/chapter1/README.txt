@@ -11,3 +11,10 @@ kr_lcount.c         行数のカウント
 kr_lcount2.c        行数のカウント　第２版
 kr_wcount.c         行数、単語、文字のカウント
 kr_array.c          配列
+kr_powerm.c         べき乗のメイン
+kr_power.c          べき乗
+kr_powerm2.c        べき乗のメイン第2版
+kr_power2.copy      べき乗第2版
+kr_mainl.c          文字配列のメイン
+kr_getline.c        行を入れる
+kr_copy3.c          配列をコピー
