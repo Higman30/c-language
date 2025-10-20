@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // 自動で input.txt を標準入力に渡す
+      "name": "C: Debug (input.txt, CodeLLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "stdio": ["${fileDirname}/input.txt", null, null],
+      "preLaunchTask": "C Build active file",
+      "stopOnEntry": false
+    },
+    {
+      // 手動入力（Ctrl+D でEOF）
+      "name": "C: Debug (manual input, CodeLLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "preLaunchTask": "C Build active file",
+      "stopOnEntry": false
+    }
+  ]
+}

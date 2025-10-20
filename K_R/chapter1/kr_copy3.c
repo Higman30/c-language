@@ -1,8 +1,8 @@
 // kr_copy3.c
 
 
-/* 入力を出力に複写:第2版 */
-int copy3(char to[], char from[])
+/* copy: fromをtoにコピー ; toは十分大きいと仮定 */
+int copy(char to[], char from[])
 {
     int i;
 

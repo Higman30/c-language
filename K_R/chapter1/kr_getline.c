@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-/* getline; sに行を入れ、長さを返す */
+/* getline: sに行を入れ、長さを返す */
 int kr_getline(char s[], int lim)
 {
     int c;

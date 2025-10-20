@@ -1,0 +1,11 @@
+{
+    "files.autoSave": "afterDelay",
+    "code-runner.runInTerminal": true,
+    "C_Cpp.default.compilerPath": "/usr/bin/clang",
+    "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+    "C_Cpp.errorSquiggles": "enabled",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.renderWhitespace": "boundary"
+}

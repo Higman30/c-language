@@ -18,3 +18,6 @@ kr_power2.copy      べき乗第2版
 kr_mainl.c          文字配列のメイン
 kr_getline.c        行を入れる
 kr_copy3.c          配列をコピー
+kr_longest.h        外部変数のヘッダ
+kr_getline2.copy    getline 特別版
+kr_copy4.c          copy 特別版
