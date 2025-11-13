@@ -1,0 +1,18 @@
+// kr_getline_before.c
+
+#include <stdio.h>
+
+/* getline: sに行を入れ、長さを返す */
+int kr_getline_before(char s[], int lim)
+{
+    int c;
+    int i;
+
+    i = 0;
+    while (--lim > 0 && (c=getchar()) != EOF && c != '\n')
+        s[i++] = c;
+    if (c == '\n')
+        s[i++] = c;
+    s[i] = '\0';
+    return i;
+}

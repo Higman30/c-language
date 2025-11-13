@@ -1,8 +1,16 @@
-kr_strlen.c     sの長さi
-kr_binsearch.c  配列から文字を探す
-kr_atoi.c       数字に変換
-kr_lower.c      小文字に変換
-kr_rand.c       乱数発生
-kr_squeeze.c    cを取り除く
-kr_strcat.c     連結
-kr_bitcount.c   1のビットを数える
+kr_strlen_before.c  sの長さ K&R版
+kr_strlen_after.c   sの長さ　C17準拠の書き方
+kr_atoi_before.c    数字に変換 K&R版
+kr_atoi_after.c     数字に変換 C17準拠の書き方
+kr_lower_before.c   小文字に変換 K&R版
+kr_lower_after.c    小文字に変換 C17準拠の書き方
+kr_rand_before.c    乱数発生 K&R版
+kr_rand_after.c     乱数発生 C17準拠の書き方
+kr_squeeze_before.c cを取り除く K&R版
+kr_squeeze_after.c  cを取り除く C17準拠の書き方
+kr_strcat_before.c  連結 K&R版
+kr_strcat_after.c   連結 C17準拠の書き方. 
+kr_getbits_before.c pの位置からnビット取ってくる K&R版
+kr_getbits_after.c  pの位置からnビット取ってくる C17準拠の書き方
+kr_bitcount.c   1のビットを数える K&R版
+kr_bitcount.c   1のビットを数える C17準拠の書き方

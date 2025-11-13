@@ -1,59 +1,44 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    // ===================================================
-    // 🔹 アクティブなCファイルだけをビルド（デフォルト）
-    // ===================================================
-    {
-      "label": "C: Build active file",
-      "type": "shell",
-      "command": "clang",
-      "args": [
-        "-std=c17",
-        "-Wall",
-        "-Wextra",
-        "-g",
-        "${file}",
-        "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}"
-      ],
-      "options": { "cwd": "${workspaceFolder}" },
-      "group": { "kind": "build", "isDefault": true },
-      "problemMatcher": ["$gcc"],
-      "detail": "Build the currently active C file with clang"
-    },
-
-    // ===================================================
-    // 🔹 現在開いているフォルダ内の全Cファイルを一括ビルド
-    //    → rand.c + srand.c + main_randtest.c などをまとめて
-    // ===================================================
-    {
-      "label": "C: Build current folder (all .c)",
-      "type": "shell",
-      "command": "bash",
-      "args": [
-        "-c",
-        "dir='${fileDirname}'; " +
-        "out='${workspaceFolder}/build/${fileBasenameNoExtension}'; " +
-        "clang -std=c17 -Wall -Wextra -g \"$dir\"/*.c -o \"$out\" && echo \"✅ Built $out\""
-      ],
-      "options": { "cwd": "${workspaceFolder}" },
-      "group": { "kind": "build", "isDefault": false },
-      "problemMatcher": ["$gcc"],
-      "detail": "Compile & link all .c files in the active file's folder"
-    },
-
-    // ===================================================
-    // 🔹 build フォルダの中身を確認（任意）
-    // ===================================================
-    {
-      "label": "C: List build outputs",
-      "type": "shell",
-      "command": "ls",
-      "args": ["-lh", "${workspaceFolder}/build"],
-      "group": "none",
-      "problemMatcher": [],
-      "detail": "Show build folder contents after full build"
-    }
-  ]
+    // =====================================================
+    //  🧠 共通ビルドタスク (C17対応)
+    //  ~/Desktop/c-language 配下のどの chapter でも動作
+    // =====================================================
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "clang build & run",
+            "type": "shell",
+            // アクティブなファイルを自動ビルド＆実行
+            "command": "clang",
+            "args": [
+                "-std=c17",
+                "-Wall",
+                "-Wextra",
+                "-pedantic",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build active C file with clang (C17)",
+            "label": "clang build only"
+        },
+        {
+            "label": "clang run",
+            "type": "shell",
+            // 上でビルドしたファイルを実行
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn": ["clang build only"],
+            "problemMatcher": []
+        }
+    ]
 }
