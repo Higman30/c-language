@@ -55,3 +55,13 @@ kr_numcmp_before.c      numcmpのK&R版
 kr_numcmp_after.c       numcmpのC17準拠の書き方
 kr_dcl_befre.c          dclのK&R版
 kr_dcl_after.c          dclのC17準拠の書き方
+kr_dirdcl_befre.c       dirdclのK&R版
+kr_dirdcl_after.c       dirdclのC17準拠の書き方
+kr_global.c             dirdclのグローバル変数
+kr_main_dcl_before.c    dclのmain K&R2版
+kr_main_dcl_after.c     dclのmain C17準拠の書き方
+kr_header_dcl2.h        dclのmainのヘッダ
+kr_gettoken_before.c    gettokenのK&R2版
+kr_gettoken_after.d     gettokenのC17準拠の書き方
+kr_main_undcl_before.c  undclのmain K&R2版
+kr_main_undcl_after.c   undclのmain C17準拠の書き方
