@@ -10,7 +10,7 @@
 
 #define MAXWORD 100
 #define BUFSIZE 100
-#define HASHSIZE 101
+#define HASHSIZE 100
 
 struct key {
     char *word;
