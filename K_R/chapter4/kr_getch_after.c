@@ -12,7 +12,7 @@ int kr_getch_after(void) /* (押し戻された可能性もある)1文字をと�
     return (bufp > 0) ? (unsigned char)buf[--bufp] : getchar();
 }
 
-void kr_ungetch_after(int c)
+void kr_ungetch_after(int c)    /* 文字を入力に戻す */
 {
     if (bufp >= BUFSIZE)
         printf("ungetch : too many characters\n");
